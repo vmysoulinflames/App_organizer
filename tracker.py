@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'tracker.ui'
+# Form implementation generated from reading ui file '/home/mysoulinflames/PycharmProjects/tracker.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.2
 #
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(370, 20, 201, 41))
+        self.label.setGeometry(QtCore.QRect(290, 10, 541, 51))
         font = QtGui.QFont()
         font.setPointSize(24)
         font.setBold(True)
@@ -54,6 +54,9 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
+        self.vmysoulinflames = QtWidgets.QCommandLinkButton(self.centralwidget)
+        self.vmysoulinflames.setGeometry(QtCore.QRect(0, 0, 211, 31))
+        self.vmysoulinflames.setObjectName("vmysoulinflames")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 961, 22))
@@ -68,18 +71,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Приложение"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Трекер событий"))
         self.label.setText(_translate("MainWindow", "События:"))
         self.label_2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Описание:</p></body></html>"))
         self.pushButton.setText(_translate("MainWindow", "Отслеживать"))
         self.label_3.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">До наступления события осталось ХХ дней</p></body></html>"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
+        self.vmysoulinflames.setText(_translate("MainWindow", "vmysoulinflames@yahoo com"))
